@@ -1,0 +1,16 @@
+.Image{
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 287px;
+    height: 439px;
+    float: left;
+    transition: transform .2s; 
+}
+.Imagecontent{
+    width: 287px;
+    height: 439px;
+
+}
+.Image:hover{
+    transform : scale(1.2);
+}
