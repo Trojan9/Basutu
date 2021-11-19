@@ -8,6 +8,7 @@ import ContinueWatching from "./Pages/Continuewatching";
 import Latest from "./Pages/Latest"; 
 import Mylist from "./Pages/Mylist";
 import Home from "./Pages/Home";  
+import Frontpages from "./Pages/Frontpages";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Navbar/>
              <div>
                  <Routes>
+                     <Route path ="/" element= {<Frontpages/>}/>
                      <Route path = "/Home" element = {<Home/>}/>
                      <Route path = "/Continuewatching"   element = {<ContinueWatching/>}/>
                      <Route path = "/Mylist" element = {<Mylist/>}/>

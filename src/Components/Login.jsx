@@ -8,10 +8,12 @@ import { useState } from "react"
 
 function Login() {
     const [createaccount,setcreateaccount] = useState(false);
-function handleclick(){
+function handleclick(event){
      setcreateaccount(()=>{
          return true;
      })
+
+event.preventDefault();
 }
     return (
         < div className ="login">
@@ -31,7 +33,7 @@ function handleclick(){
                               <div className = "login__option3">
                     <button className = "login__button" type = "submit">Login</button>
                 </div>
-                <Link to = "/">
+                <Link className = "login__link" to = "/">
                 <div className = "login__forgotpassword">
                    <p>forgot password?</p>
                 </div>
