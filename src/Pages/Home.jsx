@@ -1,9 +1,10 @@
 import React from 'react'
-import SubNavbar from "../SubNavcomponents/index";
+import Navbar from "../Navbarcomponents/index";
 import Image from "../Imagecomponent/Image";
 
 function Home() {
     return (
+        <div>
         <div>
            <Image 
                 img = "/Movieimages/alien.jpg" alt = "alien"
@@ -30,6 +31,7 @@ function Home() {
              img="/Movieimages/game of thrones.jpg"
            />
 
+        </div>
         </div>
     );
 };
