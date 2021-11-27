@@ -4,9 +4,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import "../Components/Header.css";
 import { Link } from "react-router-dom";
 import "./nav.css";
-
+import { useStateValue } from "../LoginComponents/StateProvider";
+import { auth } from '../LoginComponents/firebase';
 
 function Navbar() {
+    const [ {mylist,user} ] = useStateValue()
+    const login = () =>{
+        if(user){
+            auth.signOut()
+        }
+    }
     return (
         <div>
             <Nav>
@@ -23,18 +30,19 @@ function Navbar() {
                         HOME
                     </NavLink>
                     <NavLink to = "/mylist">
+                        <p>{mylist.length}</p>
                         TV LIST
                     </NavLink>
                     <NavLink to = "/Latest">
                         MOVIES
                     </NavLink>
-                
-                    <Link className ="header__link" to="/login">
-                         <div className = "header__signin"> 
-                             <span>PROFILE</span>
+                    <NavLink to = {!user && "/login"}>
+                         <div onClick = {login} className = "header__signin"> 
+                             <span>Hello </span>
+                             <span>{user?.email}</span>
+                             <span>{!user?"Sign In":"Sign Out"}</span>
                         </div>
-                     </Link>
-         
+                     </NavLink>   
                 </NavMenu>
             </Nav>
         </div>

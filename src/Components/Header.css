@@ -20,7 +20,9 @@
     
 }
 .header__signin{
-    margin-left: 200px;
+    margin-left: 100px;
+    display:flex;
+    flex-direction: column;
 }
 .header__option1{
         margin-left: 20px;
