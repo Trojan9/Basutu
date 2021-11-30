@@ -40,7 +40,6 @@ return (<div>
                about='This is a fiction movie which tells how a child survived in space.'
                    /></Link> 
               
-		<div className = "movies">
 		<Link to='/video5'>   <Image
                  id = "14"
                  img ="/Movieimages/moneyheist3.jpg"
