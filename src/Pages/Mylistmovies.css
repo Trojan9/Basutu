@@ -1,5 +1,5 @@
 .mylistmovies{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     margin-left: 40px;
     margin-top: 50px;
     width: 287px;
@@ -13,5 +13,5 @@
 
 }
 .mylistmovies:hover{
-    transform : scale(1.2);
+    transform : scale(0.9);
 }
