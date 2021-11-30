@@ -11,10 +11,11 @@ function Mylistmovies({img , alt, id}) {
         })
     }
     return (
-        <div onClick = {removeMovie}className = "mylistmovies">
+        <div className = "mylistmovies">
             <img className = "mylistmovies__img" id ={id}src ={img} alt = {alt} />
+            <button className = "mylistmovies__button" onClick = {removeMovie}>REMOVE FROM TVLIST</button>
         </div>
-    )
+)
 }
 
 export default Mylistmovies;
