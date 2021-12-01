@@ -21,10 +21,9 @@ function Image({img, alt,topic,about}) {
     }
     
     return (
-        <div onClick = {addToMylist} className = "Image">
+       <div className = "Image">
             <img className = "Imagecontent" src={img} alt = {alt}/>
-            <h3 className='topic'>{topic}</h3>
-		    <span className='about'>{about}</span>
+            <button className="Image__button" onClick = {addToMylist}>ADD TO TVLIST</button>
         </div>
     )
 }
