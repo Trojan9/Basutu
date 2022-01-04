@@ -1,11 +1,5 @@
 export const initialState ={
-    mylist:[
-        {
-        id: "8",
-        src: "../Movieimages/game of thrones.jpg",
-        alt:"game of thrones"
-        }
-    ],
+    mylist:[],
     user: null
 };
 const reducer = (state, action) => {

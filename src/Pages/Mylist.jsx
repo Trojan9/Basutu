@@ -13,10 +13,10 @@ return (
 	<div className = "mylist">
 	   {mylist?.length === 0 ? 
 	   (<div>
-		<h2>Your list is empty</h2>
+		<h2 className = "mylist__title">Your list is empty</h2>
 	    </div>):(
 		<div>
-			<h2>Your List</h2>
+			
 		    <div className ="mylist__movies">
 			{mylist.map(item => 
 			<Mylistmovies
@@ -26,7 +26,8 @@ return (
 			/>)}
 	      	</div>
 	   </div>
-	   )}</div>
+	   )}
+	   </div>
 	   	)}
 
 export default Mylist;  

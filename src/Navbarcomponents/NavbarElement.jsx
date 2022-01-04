@@ -7,16 +7,16 @@ background-color: black;
 color : white;
 height: 85px;
 display: flex;
-justify-content: space-between
+width:100%;
 padding: 0.2rem calc((100vw - 1000px) / 2);
-padding-left : 43px;
+padding-left:43px;
 z-index: 12;
 `;
 
 export const NavLink = styled(Link)`
 color: #808080;
 display: flex;
-margin-left: 90px;
+margin-left: 20px;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
@@ -24,19 +24,21 @@ height: 100%;
 cursor: pointer;
 &.active {
 	color: white;
-	
 }
 &:hover{
 	text-decoration: underline;
-
+}
+@media only screen and (max-width:768px){
+	margin:0;
 }
 `;
 
 export const Bars = styled(FaBars)`
-display: none;
+display:none;
 color: #808080;
-@media screen and (max-width: 768px) {
+@media  only screen and (max-width: 768px) {
 	display: block;
+	margin-right:0;
 	transform: translate(-100%, 75%);
 	font-size: 1.8rem;
 	cursor: pointer;
@@ -82,3 +84,18 @@ margin-left: 24px;
 	color: white;
 }
 `;
+export const Logo = styled.h4`
+     display:flex;
+    margin-top: auto;
+    margin-bottom:auto; 
+    
+@media only screen and (max-width:768px){
+        margin-left: 0px;
+        
+    }
+
+`
+
+
+
+

@@ -2,7 +2,18 @@
     display: flex;
     height: 100vh;
     color: white;
+    justify-content:left;
+    text-align: left;
+    float:left;
+    padding:0;
 }
 .mylist__movies{
     background-color: black
+}
+.mylist__title{
+    margin-top: 0;
+    margin-left: 600px;
+
+    
+
 }

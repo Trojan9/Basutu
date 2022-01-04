@@ -1,17 +1,27 @@
 .mylistmovies{
-    /* background-color: burlywood; */
-    margin-left: 40px;
-    margin-top: 50px;
+
+    margin-top:0px;
+    margin-left:20px;
     width: 287px;
-    height: 439px;
+    height: 380px;
     float: left;
+    justify-content: left;
+    align-items:left;
     transition: transform .2s; 
+
 }
 .mylistmovies__img{
-    width: 287px;
-    height: 439px;
 
+    width: 287px;
+    height: 380px;
+    
 }
 .mylistmovies:hover{
     transform : scale(0.9);
 }
+.mylistmovies__button{
+    margin-left: 60px;
+    background-color:grey;
+    border-width: 0;
+}
+

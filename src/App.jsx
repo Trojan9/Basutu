@@ -46,6 +46,7 @@ function App() {
                      <Route path = "/Mylist" element = {<Mylist/>}/>
                      <Route path = "/Latest" element = {<Movies/>}/>
                      <Route path = "/" element = {<Login/>}/>
+                     <Route path = "/Login" element = {<Login/>}/>
                      <Route path = "/video1" element = {<Avengers/>}/>
                      <Route path = "/video2" element = {<Inception/>}/>
                      <Route path = "/video3" element = {<Joker/>}/>

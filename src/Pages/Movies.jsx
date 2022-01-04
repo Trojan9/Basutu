@@ -42,17 +42,17 @@ return (<div>
               
 		<Link to='/video5'>   <Image
                  id = "14"
-                 img ="/Movieimages/moneyheist3.jpg"
+                 img ="/Movieimages/transformers.jpg"
                 />   </Link> 
 	
 		<Link to='/video6'> <Image
                  id = "15"
-                 img ="/Movieimages/moneyheist3.jpg"
+                 img ="/Movieimages/antman.jpeg"
                   /></Link>
 	     
 		<Link to='/video7'>   <Image
                   id = "16"
-                  img ="/Movieimages/moneyheist3.jpg"
+                  img ="/Movieimages/strangerthings1.jpg"
                   /> </Link>
 	
 		<Link to='/video8'>

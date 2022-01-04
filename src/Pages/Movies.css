@@ -1,20 +1,4 @@
-.movies{
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 330px;
-    color: white;
-    margin-top: 20px;
-}
 
-img{
-    width: 310px;
-    height: 439px;
-}
-img:hover{
-    transform : scale(0.95);
-    transition-duration: 0.8s;
-}
 .topic{
     display: block;
     font-size: 20px;

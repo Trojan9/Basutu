@@ -9,4 +9,5 @@ function Frontpages() {
     )
 }
 
+
 export default Frontpages
