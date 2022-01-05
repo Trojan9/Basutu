@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useState} from "react";
 import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Navbar from "./Navbarcomponents/index";
 import Login from "./LoginComponents/Login";
+import Dropdown from "./Dropdowncomponents/Dropdown";
 import "./styles.css";
 import Movies from "./Pages/Movies"; 
 import Mylist from "./Pages/Mylist";
@@ -35,11 +36,15 @@ function App() {
     }
     }
     ,[])
-
+    const [isOpen,setIsopen] =  useState(false);
+function toggle (){
+    setIsopen(!isOpen)
+}
 
     return (
-        <Router>
-           <Navbar/>
+        <Router >
+           <Navbar toggle = {toggle}/>
+           <Dropdown isOpen = {isOpen} toggle ={toggle}/>
              <div> 
                  <Routes>
                      <Route path = "/Home" element = {<Home/>}/>

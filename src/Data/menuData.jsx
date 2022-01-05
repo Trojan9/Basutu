@@ -5,7 +5,7 @@ const menuData = [
   
     },
     {
-        link:"//mylist",
+        link:"/mylist",
         title:"TV LIST"
     },
     {

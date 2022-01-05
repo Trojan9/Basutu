@@ -8,7 +8,7 @@ import { useStateValue } from "../LoginComponents/StateProvider";
 import { auth } from '../LoginComponents/firebase';
 
 
-function Navbar() {
+function Navbar({toggle}) {
     const [ {mylist,user} ] = useStateValue()
     const login = () =>{
         if(user){
@@ -18,11 +18,12 @@ function Navbar() {
     return (
         <div>
             <Nav>
-                <Bars/>
-                  <Logo>
-                     MY MOVIES
-                 </Logo>
-                <NavMenu>
+                <Bars onClick = {toggle}/>
+                  <NavMenu>
+                     <Logo>
+                        MY MOVIES
+                     </Logo>
+
                     <div className = "header__search">
                            <SearchIcon className = "header__searchicon"/>
                     <input className = "header__searchinput" placeholder = "Search"></input>

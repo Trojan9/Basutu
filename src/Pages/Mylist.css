@@ -1,19 +1,29 @@
 .mylist{
     display: flex;
-    height: 100vh;
     color: white;
     justify-content:left;
     text-align: left;
     float:left;
     padding:0;
+
 }
 .mylist__movies{
     background-color: black
 }
 .mylist__title{
-    margin-top: 0;
     margin-left: 600px;
-
-    
-
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+@media only screen and (max-width:768px){
+    .mylist__title{
+        margin-right:500px;
+    text-align: center;
+    justify-content: center;
+}
+.mylist{
+    text-align: center;
+    justify-content: center;
+}
 }
