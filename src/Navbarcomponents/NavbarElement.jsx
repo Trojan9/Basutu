@@ -11,7 +11,7 @@ width:100%;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 padding-left:43px;
 z-index: 22;
-`;
+`; 
 
 export const NavLink = styled(Link)`
 color: #808080;
